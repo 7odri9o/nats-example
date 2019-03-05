@@ -11,6 +11,14 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile 'io.javalin:javalin:2.6.0'
+    compile 'org.slf4j:slf4j-simple:1.7.25'
+    compile 'org.koin:koin-core:1.+'
+    compile 'org.jetbrains.exposed:exposed:0.12.+'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.8'
+    compile 'com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8'
+    compile 'com.zaxxer:HikariCP:3.+'
+    compile "com.h2database:h2:1.+"
 }
 
 compileKotlin {
