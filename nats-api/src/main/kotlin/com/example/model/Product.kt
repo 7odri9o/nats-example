@@ -9,5 +9,6 @@ class Product(id: EntityID<UUID>) : Entity<UUID>(id) {
     companion object : EntityClass<UUID, Product>(Products)
 
     var name by Products.name
+    var price by Products.price
 
 }

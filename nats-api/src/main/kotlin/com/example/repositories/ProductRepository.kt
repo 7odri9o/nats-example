@@ -11,6 +11,7 @@ class ProductRepository {
         return transaction {
             Product.new {
                 name = product.name.toString()
+                price = product.price!!.toBigDecimal()
             }
         }
     }

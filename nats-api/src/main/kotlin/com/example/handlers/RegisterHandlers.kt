@@ -7,7 +7,7 @@ import org.koin.standalone.KoinComponent
 object RegisterHandlers : KoinComponent {
 
     fun register(app: Javalin) {
-        ProductNameEmptyOrNullHandler.register(app)
+        ProductDTOValidator.register(app)
 
         BadRequestHandler.register(app)
     }

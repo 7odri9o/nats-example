@@ -12,7 +12,8 @@ class ProductService(
         return productRepository.save(product).let {
             ProductResponse(
                 id = it.id.value.toString(),
-                name = it.name
+                name = it.name,
+                price = it.price.toFloat()
             )
         }
     }
