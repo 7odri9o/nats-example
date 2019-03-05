@@ -1,5 +1,5 @@
 package com.example.dto
 
-data class Product(
+data class ProductDTO(
     val name: String?
 )
