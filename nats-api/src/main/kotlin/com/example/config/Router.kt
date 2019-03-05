@@ -1,4 +1,4 @@
-package com.example
+package com.example.config
 
 import com.example.controllers.ProductController
 import io.javalin.Javalin

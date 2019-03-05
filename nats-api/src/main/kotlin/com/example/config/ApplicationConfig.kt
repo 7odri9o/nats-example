@@ -1,7 +1,7 @@
 package com.example.config
 
-import com.example.Router
 import com.example.config.ModulesConfig.allModules
+import com.example.handlers.RegisterHandlers
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.datatype.joda.JodaModule
@@ -35,6 +35,7 @@ class ApplicationConfig : KoinComponent {
                 app.enableCorsForAllOrigins()
                     .contextPath(getProperty("context"))
                 router.register(app)
+                RegisterHandlers.register(app)
                 app.port(getProperty("server_port"))
             }
     }

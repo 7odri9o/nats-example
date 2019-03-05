@@ -1,6 +1,5 @@
 package com.example.config
 
-import com.example.Router
 import com.example.controllers.ProductController
 import com.example.repositories.ProductRepository
 import com.example.services.ProductService
