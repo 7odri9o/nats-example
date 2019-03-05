@@ -10,8 +10,8 @@ object ProductDTOValidator {
         app.before("/products") {
             it.method().takeIf { method -> method == "POST" }
                 .apply {
-                    val product = it.body<ProductDTO>()
-                    product.let { productDTO ->
+                    val body = it.body<ProductDTO>()
+                    body.let { productDTO ->
                         if (productDTO.name.isNullOrBlank()) {
                             throw BadRequestResponse("O campo Name deve ser preenchido")
                         }

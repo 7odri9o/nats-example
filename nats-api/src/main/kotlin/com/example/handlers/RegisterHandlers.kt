@@ -8,6 +8,7 @@ object RegisterHandlers : KoinComponent {
 
     fun register(app: Javalin) {
         ProductDTOValidator.register(app)
+        CategoryDTOValidator.register(app)
 
         BadRequestHandler.register(app)
     }
